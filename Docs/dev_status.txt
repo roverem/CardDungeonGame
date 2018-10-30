@@ -1,3 +1,23 @@
 Estoy mirando tutorial de fungus. Voy por la parte de blocks:
 
 http://fungusdocs.snozbot.com/blocks.html
+
+
+
+Usaré como template el siguiente tutorial oficial
+
+https://unity3d.com/es/learn/tutorials/s/2d-roguelike-tutorial
+
+
+
+
+
+
+
+
+A groso modo el juego debe tener 
+
+- un personaje, moviendosé en un grilla, con un ataque
+- un enemigo, estatico, drop 
+- drop que deja el enemigo al derrotarlo, tiene que poder agarrarse y reflejarlo en la GUI
+- los drops se apilan en la GUI y eventualmente podes configurarlos/cambiarlos
