@@ -1,18 +1,16 @@
-Estoy mirando tutorial de fungus. Voy por la parte de blocks:
+Usé este tutorial para los botones
+https://unity3d.com/learn/tutorials/topics/user-interface-ui/menu-shortcuts-and-additional-styling?playlist=17111
 
+Usé llamadas a bloques desde código con este referencia:
+http://fungusdocs.snozbot.com/coding_tips.html
+
+Estuve mirando la documentacion de fungus. Voy por:
 http://fungusdocs.snozbot.com/blocks.html
 
 
-
 Usaré como template el siguiente tutorial oficial
-
 https://unity3d.com/es/learn/tutorials/s/2d-roguelike-tutorial
-
-
-
-
-
-
+Por ahora estoy usando el proyecto terminado y agregandole UI.
 
 
 A groso modo el juego debe tener 
@@ -21,3 +19,7 @@ A groso modo el juego debe tener
 - un enemigo, estatico, drop 
 - drop que deja el enemigo al derrotarlo, tiene que poder agarrarse y reflejarlo en la GUI
 - los drops se apilan en la GUI y eventualmente podes configurarlos/cambiarlos
+
+
+Fede armó una documentación para definir el juego:
+https://docs.google.com/presentation/d/1eo5JaWYNvs6QRh2jX3FwCNa5Xrv5JnNT4-C5iRwjFu8/edit?ts=5bda0fc9#slide=id.g469b37fab3_0_169

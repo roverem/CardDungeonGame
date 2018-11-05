@@ -2,12 +2,15 @@
 using System.Collections;
 using UnityEngine.UI;	//Allows us to use UI.
 using UnityEngine.SceneManagement;
+using Fungus;
+
 
 namespace Completed
 {
 	//Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
 	public class Player : MovingObject
 	{
+		public Flowchart flowchart;
 		public float restartLevelDelay = 1f;		//Delay time in seconds to restart level.
 		public int pointsPerFood = 10;				//Number of points to add to player food points when picking up a food object.
 		public int pointsPerSoda = 20;				//Number of points to add to player food points when picking up a soda object.
@@ -26,8 +29,9 @@ namespace Completed
 #if UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         private Vector2 touchOrigin = -Vector2.one;	//Used to store location of screen touch origin for mobile controls.
 #endif
+
 		
-		
+		private bool played;
 		//Start overrides the Start function of MovingObject
 		protected override void Start ()
 		{
@@ -39,7 +43,11 @@ namespace Completed
 			
 			//Set the foodText to reflect the current player food total.
 			foodText.text = "Food: " + food;
-			
+
+			if (!GameManager.instance.playedIntro){
+				GameManager.instance.playedIntro = true;
+				flowchart.ExecuteBlock("Intro");;
+			}
 			//Call the Start function of the MovingObject base class.
 			base.Start ();
 		}
